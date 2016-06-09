@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-loaders",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "An ember-cli addon for using Loaders.css",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,15 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kaermorchen/ember-cli-loaders.git"
+  },
+  "homepage": "https://github.com/kaermorchen/ember-cli-loaders",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Stanislav Romanov <mail@stanislavromanov.ru> (http://stanislavromanov.ru)",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
@@ -39,10 +43,17 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
+    "Loaders.css",
+    "loader",
+    "css",
+    "animations",
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.6"
+    "broccoli-funnel": "^1.0.1",
+    "broccoli-merge-trees": "^1.1.1",
+    "ember-cli-babel": "^5.1.6",
+    "ember-cli-sass": "^5.3.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
