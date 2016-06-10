@@ -78,5 +78,40 @@ You can use custom Loaders.css variables. For this copy `bower_components\loader
 @import "ember-cli-loaders/loaders";
 ```
 
+## How to use
+
+You can use loader's components.
+
+```
+{{loader-ball-pulse}}
+{{loader-ball-grid-pulse}}
+{{loader-ball-clip-rotate}}
+{{loader-ball-clip-rotate-pulse}}
+{{loader-square-spin}}
+{{loader-ball-clip-rotate-multiple}}
+{{loader-ball-pulse-rise}}
+{{loader-ball-rotate}}
+{{loader-cube-transition}}
+{{loader-ball-zig-zag}}
+{{loader-ball-zig-zag-deflect}}
+{{loader-ball-triangle-path}}
+{{loader-ball-scale}}
+{{loader-line-scale}}
+{{loader-line-scale-party}}
+{{loader-ball-scale-multiple}}
+{{loader-ball-pulse-sync}}
+{{loader-ball-beat}}
+{{loader-line-scale-pulse-out}}
+{{loader-line-scale-pulse-out-rapid}}
+{{loader-ball-scale-ripple}}
+{{loader-ball-scale-ripple-multiple}}
+{{loader-line-spin-fade-loader}}
+{{loader-triangle-skew-spin}}
+{{loader-pacman}}
+{{loader-semi-circle-spin}}
+{{loader-ball-grid-beat}}
+{{loader-ball-scale-random}}
+```
+
 ## License
 Ember-cli-loaders is released under the MIT License. See the bundled [LICENSE](LICENSE.md) file for details.
