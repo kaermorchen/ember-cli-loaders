@@ -1,26 +1,82 @@
 # Ember-cli-loaders
 
-This README outlines the details of collaborating on this Ember addon.
+An [ember-cli](http://www.ember-cli.com) addon for using [Loaders.css](https://connoratherton.com/loaders) in Ember applications.
 
-## Installation
+## Getting Started
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+Install in ember-cli application
 
-## Running
+```
+ember install ember-cli-loaders
+```
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+Then include the following in your `app.scss` file:
 
-## Running Tests
+```
+@import "ember-cli-loaders/loaders";
+```
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+## Configuration
 
-## Building
+### Custom Loaders.css components
 
-* `ember build`
+For import not all loaders instead `@import "ember-cli-loaders/loaders";` you can use code below:
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+```
+@import 'ember-cli-loaders/variables';
+@import 'ember-cli-loaders/mixins';
+
+/**
+ * Dots
+ */
+@import 'ember-cli-loaders/animations/ball-pulse';
+@import 'ember-cli-loaders/animations/ball-pulse-sync';
+@import 'ember-cli-loaders/animations/ball-scale';
+@import 'ember-cli-loaders/animations/ball-scale-random';
+@import 'ember-cli-loaders/animations/ball-rotate';
+@import 'ember-cli-loaders/animations/ball-clip-rotate';
+@import 'ember-cli-loaders/animations/ball-clip-rotate-pulse';
+@import 'ember-cli-loaders/animations/ball-clip-rotate-multiple';
+@import 'ember-cli-loaders/animations/ball-scale-ripple';
+@import 'ember-cli-loaders/animations/ball-scale-ripple-multiple';
+@import 'ember-cli-loaders/animations/ball-beat';
+@import 'ember-cli-loaders/animations/ball-scale-multiple';
+@import 'ember-cli-loaders/animations/ball-triangle-trace';
+@import 'ember-cli-loaders/animations/ball-pulse-rise';
+@import 'ember-cli-loaders/animations/ball-grid-beat';
+@import 'ember-cli-loaders/animations/ball-grid-pulse';
+@import 'ember-cli-loaders/animations/ball-spin-fade-loader';
+@import 'ember-cli-loaders/animations/ball-spin-loader';
+@import 'ember-cli-loaders/animations/ball-zig-zag';
+@import 'ember-cli-loaders/animations/ball-zig-zag-deflect';
+
+/**
+ * Lines
+ */
+@import 'ember-cli-loaders/animations/line-scale';
+@import 'ember-cli-loaders/animations/line-scale-random';
+@import 'ember-cli-loaders/animations/line-scale-pulse-out';
+@import 'ember-cli-loaders/animations/line-scale-pulse-out-rapid';
+@import 'ember-cli-loaders/animations/line-spin-fade-loader';
+
+/**
+ * Misc
+ */
+@import 'ember-cli-loaders/animations/triangle-skew-spin';
+@import 'ember-cli-loaders/animations/square-spin';
+@import 'ember-cli-loaders/animations/pacman';
+@import 'ember-cli-loaders/animations/cube-transition';
+@import 'ember-cli-loaders/animations/semi-circle-spin';
+```
+
+### Custom variables
+
+You can use custom Loaders.css variables. For this copy `bower_components\loaders.css\src\_variables.scss` in your `app\styles` directory. And add import `variables.scss` in `app.scss`.
+
+```
+@import "variables";
+@import "ember-cli-loaders/loaders";
+```
+
+## License
+Ember-cli-loaders is released under the MIT License. See the bundled [LICENSE](LICENSE.md) file for details.
