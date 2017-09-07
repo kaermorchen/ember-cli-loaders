@@ -1,4 +1,4 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
 var path = require('path');
@@ -7,9 +7,11 @@ var mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-cli-loaders',
+
   included: function(app) {
     this._super.included(app);
   },
+
   treeForStyles: function treeForStyles(tree) {
     var styleTrees = [];
 
