@@ -16,6 +16,41 @@ Then include the following in your `app.scss` file:
 @import "ember-cli-loaders/loaders";
 ```
 
+## How to use
+
+You can use loader's components.
+
+```
+{{loader-ball-pulse}}
+{{loader-ball-grid-pulse}}
+{{loader-ball-clip-rotate}}
+{{loader-ball-clip-rotate-pulse}}
+{{loader-square-spin}}
+{{loader-ball-clip-rotate-multiple}}
+{{loader-ball-pulse-rise}}
+{{loader-ball-rotate}}
+{{loader-cube-transition}}
+{{loader-ball-zig-zag}}
+{{loader-ball-zig-zag-deflect}}
+{{loader-ball-triangle-path}}
+{{loader-ball-scale}}
+{{loader-line-scale}}
+{{loader-line-scale-party}}
+{{loader-ball-scale-multiple}}
+{{loader-ball-pulse-sync}}
+{{loader-ball-beat}}
+{{loader-line-scale-pulse-out}}
+{{loader-line-scale-pulse-out-rapid}}
+{{loader-ball-scale-ripple}}
+{{loader-ball-scale-ripple-multiple}}
+{{loader-line-spin-fade-loader}}
+{{loader-triangle-skew-spin}}
+{{loader-pacman}}
+{{loader-semi-circle-spin}}
+{{loader-ball-grid-beat}}
+{{loader-ball-scale-random}}
+```
+
 ## Configuration
 
 ### Custom Loaders.css components
@@ -71,46 +106,12 @@ For import not all loaders instead `@import "ember-cli-loaders/loaders";` you ca
 
 ### Custom variables
 
-You can use custom Loaders.css variables. For this copy `bower_components\loaders.css\src\_variables.scss` in your `app\styles` directory. And add import `variables.scss` in `app.scss`.
+You can use custom Loaders.css [variables](https://github.com/ConnorAtherton/loaders.css/blob/master/src/_variables.scss)
 
 ```
-@import "variables";
+$primary-color: green;
+
 @import "ember-cli-loaders/loaders";
-```
-
-## How to use
-
-You can use loader's components.
-
-```
-{{loader-ball-pulse}}
-{{loader-ball-grid-pulse}}
-{{loader-ball-clip-rotate}}
-{{loader-ball-clip-rotate-pulse}}
-{{loader-square-spin}}
-{{loader-ball-clip-rotate-multiple}}
-{{loader-ball-pulse-rise}}
-{{loader-ball-rotate}}
-{{loader-cube-transition}}
-{{loader-ball-zig-zag}}
-{{loader-ball-zig-zag-deflect}}
-{{loader-ball-triangle-path}}
-{{loader-ball-scale}}
-{{loader-line-scale}}
-{{loader-line-scale-party}}
-{{loader-ball-scale-multiple}}
-{{loader-ball-pulse-sync}}
-{{loader-ball-beat}}
-{{loader-line-scale-pulse-out}}
-{{loader-line-scale-pulse-out-rapid}}
-{{loader-ball-scale-ripple}}
-{{loader-ball-scale-ripple-multiple}}
-{{loader-line-spin-fade-loader}}
-{{loader-triangle-skew-spin}}
-{{loader-pacman}}
-{{loader-semi-circle-spin}}
-{{loader-ball-grid-beat}}
-{{loader-ball-scale-random}}
 ```
 
 ## License
