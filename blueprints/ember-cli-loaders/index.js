@@ -1,13 +1,12 @@
 module.exports = {
-  normalizeEntityName: function () { },
-
-  beforeInstall: function () {
-    return this.addBowerPackageToProject('loaders.css', '^0.1.2');
+  normalizeEntityName: function (entityName) {
+    return entityName || "ember-cli-loaders";
   },
 
   afterInstall: function () {
     return this.addPackagesToProject([
-      { name: 'ember-cli-sass', target: '^5.3.1' }
+      { name: 'loaders.css', target: '^0.1.2' },
+      { name: 'ember-cli-sass', target: '^6.1.1' }
     ]);
   }
 };

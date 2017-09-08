@@ -1,6 +1,0 @@
-{
-  "name": "ember-cli-loaders",
-  "dependencies": {
-    "loaders.css": "~0.1.2"
-  }
-}

@@ -10,15 +10,16 @@
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "Stanislav Romanov <kaermorchen@gmail.com> (http://stanislavromanov.ru)",
+  "author": {
+    "name": "Stanislav Romanov",
+    "email": "kaermorchen@gmail.com",
+    "url": "https://stanislavromanov.ru"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:kaermorchen/ember-cli-loaders.git"
-  },
+  "repository": "https://github.com/kaermorchen/ember-cli-loaders",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -30,7 +31,8 @@
     "ember-cli-babel": "^6.3.0",
     "ember-cli-htmlbars": "^1.0.8",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
-    "ember-cli-sass": "^5.3.1"
+    "ember-cli-sass": "^6.1.1",
+    "loaders.css": "^0.1.2"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
