@@ -1,8 +1,6 @@
-import Ember from 'ember';
-import layout from '../templates/components/loader-ball-grid-pulse';
-import loaderBase from '../mixins/loader-base';
+import LoaderBase from './loader-base';
 
-export default Ember.Component.extend(loaderBase, {
+export default LoaderBase.extend({
   classNames: ['ball-grid-pulse'],
-  layout: layout
+  divCount: 9
 });

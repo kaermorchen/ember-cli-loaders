@@ -1,8 +1,6 @@
-import Ember from 'ember';
-import layout from '../templates/components/loader-triangle-skew-spin';
-import loaderBase from '../mixins/loader-base';
+import LoaderBase from './loader-base';
 
-export default Ember.Component.extend(loaderBase, {
+export default LoaderBase.extend({
   classNames: ['triangle-skew-spin'],
-  layout: layout
+  divCount: 1
 });

@@ -1,8 +1,6 @@
-import Ember from 'ember';
-import layout from '../templates/components/loader-ball-pulse-sync';
-import loaderBase from '../mixins/loader-base';
+import LoaderBase from './loader-base';
 
-export default Ember.Component.extend(loaderBase, {
+export default LoaderBase.extend({
   classNames: ['ball-pulse-sync'],
-  layout: layout
+  divCount: 3
 });

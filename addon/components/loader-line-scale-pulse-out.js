@@ -1,8 +1,6 @@
-import Ember from 'ember';
-import layout from '../templates/components/loader-line-scale-pulse-out';
-import loaderBase from '../mixins/loader-base';
+import LoaderBase from './loader-base';
 
-export default Ember.Component.extend(loaderBase, {
+export default LoaderBase.extend({
   classNames: ['line-scale-pulse-out'],
-  layout: layout
+  divCount: 5
 });
