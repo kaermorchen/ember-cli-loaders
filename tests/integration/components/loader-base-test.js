@@ -12,13 +12,15 @@ test('it renders', function(assert) {
   this.render(hbs`{{loader-base}}`);
 
   assert.equal(this.$().text().trim(), '');
+});
 
-  // Template block usage:
-  this.render(hbs`
-    {{#loader-base}}
-      template block text
-    {{/loader-base}}
-  `);
+test('divCount is worked', function(assert) {
+  const divCount = 3;
+  const divs = '<div></div>'.repeat(divCount);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  this.set('divCount', divCount);
+
+  this.render(hbs`{{loader-base divCount=divCount}}`);
+
+  assert.equal(this.$().children().html().replace(/\s/g, ''), divs);
 });

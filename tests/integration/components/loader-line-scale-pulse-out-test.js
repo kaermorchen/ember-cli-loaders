@@ -12,13 +12,4 @@ test('it renders', function(assert) {
   this.render(hbs`{{loader-line-scale-pulse-out}}`);
 
   assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#loader-line-scale-pulse-out}}
-      template block text
-    {{/loader-line-scale-pulse-out}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });

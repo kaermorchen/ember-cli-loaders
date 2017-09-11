@@ -12,13 +12,4 @@ test('it renders', function(assert) {
   this.render(hbs`{{loader-ball-scale-ripple-multiple}}`);
 
   assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#loader-ball-scale-ripple-multiple}}
-      template block text
-    {{/loader-ball-scale-ripple-multiple}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });

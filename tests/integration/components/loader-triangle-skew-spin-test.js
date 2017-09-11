@@ -12,13 +12,4 @@ test('it renders', function(assert) {
   this.render(hbs`{{loader-triangle-skew-spin}}`);
 
   assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#loader-triangle-skew-spin}}
-      template block text
-    {{/loader-triangle-skew-spin}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });
