@@ -5,7 +5,7 @@ const { assert, computed, on, typeOf } = Ember;
 
 export default Ember.Component.extend({
   layout,
-  classNames: ['loader-inner'],
+  classNames: ['loader-base'],
 
   divCount: null,
 
