@@ -1,5 +1,11 @@
 # Ember-cli-loaders
 
+[![npm version](https://badge.fury.io/js/ember-cli-loaders.svg)](https://www.npmjs.com/package/ember-cli-loaders)
+[![npm monthly downloads](https://img.shields.io/npm/dm/ember-cli-loaders.svg)](https://www.npmjs.com/package/ember-cli-loaders)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-cli-loaders.svg)](https://emberobserver.com/addons/ember-cli-loaders)
+[![Build Status](https://travis-ci.org/kaermorchen/ember-cli-loaders.svg?branch=master)](https://travis-ci.org/kaermorchen/ember-cli-loaders)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 An [ember-cli](http://www.ember-cli.com) addon for using [Loaders.css](https://connoratherton.com/loaders) in Ember applications.
 
 ### [Demo](https://kaermorchen.github.io/ember-cli-loaders/)
