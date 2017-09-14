@@ -2,6 +2,8 @@
 
 An [ember-cli](http://www.ember-cli.com) addon for using [Loaders.css](https://connoratherton.com/loaders) in Ember applications.
 
+### [Demo](https://kaermorchen.github.io/ember-cli-loaders/)
+
 ## Getting Started
 
 Install in ember-cli application
