@@ -14,6 +14,17 @@ export default Ember.Component.extend({
   }),
 
   divs: computed('divCount', function () {
-    return new Array(this.get('divCount'));
+    const divCount = this.get('divCount');
+    const divs = [];
+
+    if (typeOf(divCount) !== 'number') {
+      return divs;
+    }
+
+    for (let index = 0; index < divCount; index++) {
+      divs.push(index);
+    }
+
+    return divs;
   })
 });
