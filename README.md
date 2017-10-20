@@ -14,13 +14,13 @@ An [ember-cli](http://www.ember-cli.com) addon for using [Loaders.css](https://c
 
 Install in ember-cli application
 
-```
+```bash
 ember install ember-cli-loaders
 ```
 
 Then include the following in your `app.scss` file:
 
-```
+```scss
 @import "ember-cli-loaders/loaders";
 ```
 
@@ -28,7 +28,7 @@ Then include the following in your `app.scss` file:
 
 You can use loader's components.
 
-```
+```mustache
 {{loader-ball-pulse}}
 {{loader-ball-grid-pulse}}
 {{loader-ball-clip-rotate}}
@@ -65,7 +65,7 @@ You can use loader's components.
 
 For import not all loaders instead `@import "ember-cli-loaders/loaders";` you can use code below:
 
-```
+```scss
 @import 'ember-cli-loaders/variables';
 @import 'ember-cli-loaders/mixins';
 
@@ -116,7 +116,7 @@ For import not all loaders instead `@import "ember-cli-loaders/loaders";` you ca
 
 You can use custom Loaders.css [variables](https://github.com/ConnorAtherton/loaders.css/blob/master/src/_variables.scss)
 
-```
+```scss
 $primary-color: green;
 
 @import "ember-cli-loaders/loaders";
