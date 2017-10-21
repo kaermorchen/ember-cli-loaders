@@ -11,7 +11,13 @@ module.exports = {
   treeForStyles: function treeForStyles(tree) {
     var styleTrees = [];
 
-    if (this.app.project.findAddonByName('ember-cli-sass')) {
+    let current = this;
+    let app;
+    do {
+      app = current.app || app;
+    } while (current.parent.parent && (current = current.parent));
+
+    if (app.project.findAddonByName('ember-cli-sass')) {
       var sassTree = new Funnel(path.join('node_modules', 'loaders.css', 'src'), {
         destDir: 'ember-cli-loaders'
       });
