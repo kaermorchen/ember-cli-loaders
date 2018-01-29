@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Controller from '@ember/controller';
 
-export default Ember.Controller.extend({
-  componentNames: [
+export default Controller.extend({
+  componentNames: Object.freeze([
     'loader-ball-pulse',
     'loader-ball-grid-pulse',
     'loader-ball-clip-rotate',
@@ -30,5 +30,5 @@ export default Ember.Controller.extend({
     'loader-pacman',
     'loader-ball-grid-beat',
     'loader-semi-circle-spin'
-  ]
+  ])
 });

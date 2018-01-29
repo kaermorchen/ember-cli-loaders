@@ -1,17 +1,13 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 import layout from '../templates/components/loader-base';
+import { computed } from '@ember/object';
+import { typeOf } from '@ember/utils';
 
-const { assert, computed, on, typeOf } = Ember;
-
-export default Ember.Component.extend({
+export default Component.extend({
   layout,
   classNames: ['loader-base'],
 
   divCount: null,
-
-  setupComponent: on('init', function () {
-    assert('{{loader-base}} requires the divCount property as number.', typeOf(this.get('onChange')) !== 'number');
-  }),
 
   divs: computed('divCount', function () {
     const divCount = this.get('divCount');
