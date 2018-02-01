@@ -9,9 +9,9 @@ module.exports = {
 
   treeForStyles: function treeForStyles(tree) {
     var styleTrees = [];
+    var current = this;
+    var app;
 
-    let current = this;
-    let app;
     do {
       app = current.app || app;
     } while (current.parent.parent && (current = current.parent));
