@@ -6,7 +6,7 @@ module.exports = {
   afterInstall: function () {
     return this.addPackagesToProject([
       { name: 'loaders.css', target: '^0.1.2' },
-      { name: 'ember-cli-sass', target: '^6.1.1' }
+      { name: 'ember-cli-sass', target: '^7.0.0' }
     ]);
   }
 };
