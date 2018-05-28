@@ -1,26 +1,24 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('loader-base', 'Integration | Component | loader base', {
-  integration: true
-});
+module('Integration | Component | loader-base', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+  test('it renders', async function(assert) {
+    await render(hbs`{{loader-base}}`);
 
-  this.render(hbs`{{loader-base}}`);
+    assert.dom('.loader-base').exists();
+  });
 
-  assert.equal(this.$().text().trim(), '');
-});
+  test('divCount works', async function(assert) {
+    const divCount = 3;
 
-test('divCount is worked', function(assert) {
-  const divCount = 3;
-  const divs = '<div></div>'.repeat(divCount);
+    this.set('divCount', divCount);
 
-  this.set('divCount', divCount);
+    await render(hbs`{{loader-base divCount=divCount}}`);
 
-  this.render(hbs`{{loader-base divCount=divCount}}`);
-
-  assert.equal(this.$().children().html().replace(/\s/g, ''), divs);
+    assert.equal(this.element.querySelector('.loader-base').innerHTML.trim(), '<div></div>'.repeat(divCount));
+  });
 });
