@@ -5,7 +5,7 @@ var Funnel = require('broccoli-funnel');
 var mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
-  name: 'ember-cli-loaders',
+  name: require('./package').name,
 
   treeForStyles: function treeForStyles(tree) {
     var styleTrees = [];
