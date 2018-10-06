@@ -7,7 +7,7 @@ var mergeTrees = require('broccoli-merge-trees');
 module.exports = {
   name: require('./package').name,
 
-  treeForStyles: function treeForStyles(tree) {
+  treeForStyles: function (tree) {
     var styleTrees = [];
     var current = this;
     var app;
