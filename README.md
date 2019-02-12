@@ -10,6 +10,16 @@
 
 An [ember-cli](http://www.ember-cli.com) addon for using [Loaders.css](https://connoratherton.com/loaders) in Ember applications.
 
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+
+
+Installation
+------------------------------------------------------------------------------
+
 ### [Demo](https://kaermorchen.github.io/ember-cli-loaders/)
 
 ## Getting Started

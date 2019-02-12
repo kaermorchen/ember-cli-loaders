@@ -1,27 +1,23 @@
 'use strict';
 
-var path = require('path');
-var Funnel = require('broccoli-funnel');
-var mergeTrees = require('broccoli-merge-trees');
+const path = require('path');
+const Funnel = require('broccoli-funnel');
+const mergeTrees = require('broccoli-merge-trees');
+const resolve = require('resolve');
 
 module.exports = {
   name: require('./package').name,
 
-  treeForStyles: function (tree) {
-    var styleTrees = [];
-    var current = this;
-    var app;
+  treeForStyles(tree) {
+    this._ensureFindHost();
 
-    do {
-      app = current.app || app;
-    } while (current.parent.parent && (current = current.parent));
+    let styleTrees = [];
+    let host = this._findHost();
 
-    if (app.project.findAddonByName('ember-cli-sass')) {
-      var sassTree = new Funnel(path.join('node_modules', 'loaders.css', 'src'), {
-        destDir: 'ember-cli-loaders'
-      });
-
-      styleTrees.push(sassTree);
+    if (host.project.findAddonByName('ember-cli-sass')) {
+      styleTrees.push(new Funnel(path.join(this.resolvePackagePath('loaders.css'), 'src'), {
+        destDir: this.name
+      }));
     }
 
     if (tree) {
@@ -29,5 +25,24 @@ module.exports = {
     }
 
     return mergeTrees(styleTrees, { overwrite: true });
+  },
+
+  resolvePackagePath(packageName) {
+    return path.dirname(resolve.sync(`${packageName}/package.json`, { basedir: this.app.project.root }));
+  },
+
+  _ensureFindHost() {
+    if (!this._findHost) {
+      this._findHost = function findHostShim() {
+        let current = this;
+        let app;
+
+        do {
+          app = current.app || app;
+        } while (current.parent.parent && (current = current.parent));
+
+        return app;
+      };
+    }
   }
 };
