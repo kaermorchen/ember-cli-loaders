@@ -13,8 +13,9 @@ An [ember-cli](http://www.ember-cli.com) addon for using [Loaders.css](https://c
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v2.18 or above
+* Ember.js v3.4 or above
 * Ember CLI v2.13 or above
+* Node.js v8 or above
 
 
 Installation
@@ -134,5 +135,13 @@ $primary-color: green;
 @import "ember-cli-loaders/loaders";
 ```
 
-## License
+Contributing
+------------------------------------------------------------------------------
+
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
+
+License
+------------------------------------------------------------------------------
+
 Ember-cli-loaders is released under the MIT License. See the bundled [LICENSE](LICENSE.md) file for details.
