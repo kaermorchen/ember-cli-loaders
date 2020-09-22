@@ -10,7 +10,7 @@ export default Component.extend({
   divCount: null,
 
   divs: computed('divCount', function () {
-    const divCount = this.get('divCount');
+    const divCount = this.divCount;
     const divs = [];
 
     if (typeOf(divCount) !== 'number') {
