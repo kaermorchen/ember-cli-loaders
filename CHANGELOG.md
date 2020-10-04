@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/kaermorchen/ember-cli-loaders/compare/v0.4.0...HEAD)
 
+**Implemented enhancements:**
+
+- Update Ember's version [\#10](https://github.com/kaermorchen/ember-cli-loaders/pull/10) ([kaermorchen](https://github.com/kaermorchen))
+
 **Closed issues:**
 
 - Better defaults or examples for new users [\#3](https://github.com/kaermorchen/ember-cli-loaders/issues/3)
