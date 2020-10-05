@@ -2,15 +2,19 @@
 
 ## [Unreleased](https://github.com/kaermorchen/ember-cli-loaders/tree/HEAD)
 
-[Full Changelog](https://github.com/kaermorchen/ember-cli-loaders/compare/v0.4.0...HEAD)
+[Full Changelog](https://github.com/kaermorchen/ember-cli-loaders/compare/v0.7.0...HEAD)
+
+**Merged pull requests:**
+
+- Added to GitHub packages [\#11](https://github.com/kaermorchen/ember-cli-loaders/pull/11) ([kaermorchen](https://github.com/kaermorchen))
+
+## [v0.7.0](https://github.com/kaermorchen/ember-cli-loaders/tree/v0.7.0) (2020-10-04)
+
+[Full Changelog](https://github.com/kaermorchen/ember-cli-loaders/compare/v0.6.0...v0.7.0)
 
 **Implemented enhancements:**
 
 - Update Ember's version [\#10](https://github.com/kaermorchen/ember-cli-loaders/pull/10) ([kaermorchen](https://github.com/kaermorchen))
-
-**Closed issues:**
-
-- Better defaults or examples for new users [\#3](https://github.com/kaermorchen/ember-cli-loaders/issues/3)
 
 **Merged pull requests:**
 
@@ -19,6 +23,18 @@
 - Bump websocket-extensions from 0.1.3 to 0.1.4 [\#6](https://github.com/kaermorchen/ember-cli-loaders/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump jquery from 3.4.1 to 3.5.0 [\#5](https://github.com/kaermorchen/ember-cli-loaders/pull/5) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump acorn from 5.7.3 to 5.7.4 [\#4](https://github.com/kaermorchen/ember-cli-loaders/pull/4) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v0.6.0](https://github.com/kaermorchen/ember-cli-loaders/tree/v0.6.0) (2020-01-02)
+
+[Full Changelog](https://github.com/kaermorchen/ember-cli-loaders/compare/v0.5.0...v0.6.0)
+
+## [v0.5.0](https://github.com/kaermorchen/ember-cli-loaders/tree/v0.5.0) (2019-11-26)
+
+[Full Changelog](https://github.com/kaermorchen/ember-cli-loaders/compare/v0.4.0...v0.5.0)
+
+**Closed issues:**
+
+- Better defaults or examples for new users [\#3](https://github.com/kaermorchen/ember-cli-loaders/issues/3)
 
 ## [v0.4.0](https://github.com/kaermorchen/ember-cli-loaders/tree/v0.4.0) (2019-02-12)
 
