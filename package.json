@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-loaders",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "An ember-cli addon for using Loaders.css",
   "keywords": [
     "Loaders.css",
@@ -80,5 +80,8 @@
     "configPath": "tests/dummy/config",
     "defaultBlueprint": "ember-cli-loaders",
     "demoURL": "https://kaermorchen.github.io/ember-cli-loaders/"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
