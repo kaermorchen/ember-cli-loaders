@@ -80,8 +80,5 @@
     "configPath": "tests/dummy/config",
     "defaultBlueprint": "ember-cli-loaders",
     "demoURL": "https://kaermorchen.github.io/ember-cli-loaders/"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
