@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-loaders",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "An ember-cli addon for using Loaders.css",
   "keywords": [
     "Loaders.css",
