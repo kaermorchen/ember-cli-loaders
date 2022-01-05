@@ -30,7 +30,7 @@ export default class ApplicationRoute extends Route {
       'loader-triangle-skew-spin',
       'loader-pacman',
       'loader-ball-grid-beat',
-      'loader-semi-circle-spin'
+      'loader-semi-circle-spin',
     ];
   }
 }

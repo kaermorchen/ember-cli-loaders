@@ -1,6 +1,6 @@
 module.exports = {
   normalizeEntityName(entityName) {
-    return entityName || "ember-cli-loaders";
+    return entityName || 'ember-cli-loaders';
   },
 
   afterInstall() {
@@ -9,5 +9,5 @@ module.exports = {
       { name: 'ember-cli-sass', target: '^10.0.0' },
       { name: 'sass', target: '^1.17.0' },
     ]);
-  }
+  },
 };
