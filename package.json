@@ -80,10 +80,14 @@
     "prettier": "^2.5.1",
     "qunit": "^2.17.2",
     "qunit-dom": "^1.6.0",
-    "release-it": "^14.12.1"
+    "release-it": "^14.12.1",
+    "release-it-lerna-changelog": "^3.1.0"
   },
   "engines": {
     "node": "12.* || 14.* || >= 16"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "ember": {
     "edition": "octane"
@@ -95,7 +99,17 @@
   },
   "release-it": {
     "github": {
-      "release": true
+      "release": true,
+      "tokenRef": "GITHUB_AUTH"
+    },
+    "plugins": {
+      "release-it-lerna-changelog": {
+        "infile": "CHANGELOG.md",
+        "launchEditor": true
+      }
+    },
+    "git": {
+      "tagName": "v${version}"
     }
   }
 }
