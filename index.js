@@ -15,9 +15,11 @@ module.exports = {
     let host = this._findHost();
 
     if (host.project.findAddonByName('ember-cli-sass')) {
-      styleTrees.push(new Funnel(path.join(this.resolvePackagePath('loaders.css'), 'src'), {
-        destDir: this.name
-      }));
+      styleTrees.push(
+        new Funnel(path.join(this.resolvePackagePath('loaders.css'), 'src'), {
+          destDir: this.name,
+        })
+      );
     }
 
     if (tree) {
@@ -28,7 +30,11 @@ module.exports = {
   },
 
   resolvePackagePath(packageName) {
-    return path.dirname(resolve.sync(`${packageName}/package.json`, { basedir: this.app.project.root }));
+    return path.dirname(
+      resolve.sync(`${packageName}/package.json`, {
+        basedir: this.app.project.root,
+      })
+    );
   },
 
   _ensureFindHost() {
@@ -44,5 +50,5 @@ module.exports = {
         return app;
       };
     }
-  }
+  },
 };
