@@ -1,29 +1,26 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
+<main class="loaded">
+  <header>
+    <div class="left">
       <h1>Ember Loaders</h1>
-      <h2 class="h4 "><em>Powered by <a href="https://connoratherton.com/loaders" title="Page of Loaders.css">Loaders.css</a></em></h2>
-      <p>Delightful and performance-focused pure css loading animations.</p>
+      <h2><em>Based on <a href="https://github.com/ConnorAtherton/loaders.css" title="Page of Loaders.css">Loaders.css</a></em> Delightful and performance-focused pure css loading animations.</h2>
     </div>
-    <div class="col-auto">
+    <div class="right">
       <a
         href="https://github.com/kaermorchen/ember-cli-loaders"
         title="Ember Loaders"
-        class="btn btn-primary btn-lg"
-      >
+        class="btn right">
         View on Github
       </a>
     </div>
-  </div>
-
-  <div class="row loaders">
+  </header>
+  <div class="loaders">
     {{#each @model as |name|}}
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="loader-wrapper">
-          {{component name}}
+      <div class="loader">
+        {{component name}}
+        <div class="loader-name">
+          {{concat "<" (classify name) " />"}}
         </div>
-        {{concat "{{" name "}}"}}
       </div>
     {{/each}}
   </div>
-</div>
+</main>
