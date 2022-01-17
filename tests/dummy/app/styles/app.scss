@@ -1,3 +1,12 @@
 @import "ember-cli-loaders/loaders";
 
 @import "node_modules/loaders.css/demo/src/demo.scss";
+
+.loader {
+  position: relative;
+}
+
+.loader-name {
+  position: absolute;
+  bottom: 0;
+}

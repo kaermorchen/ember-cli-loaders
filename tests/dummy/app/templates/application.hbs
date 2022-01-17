@@ -17,7 +17,9 @@
     {{#each @model as |name|}}
       <div class="loader">
         {{component name}}
-        {{concat "{{" name "}}"}}
+        <div class="loader-name">
+          {{concat "<" (classify name) " />"}}
+        </div>
       </div>
     {{/each}}
   </div>
