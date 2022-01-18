@@ -1,6 +1,5 @@
 import LoaderBase from './loader-base';
 
-export default LoaderBase.extend({
-  classNames: ['ball-spin-fade-loader'],
-  divCount: 8,
-});
+export default class BallSpinFadeLoader extends LoaderBase {
+  divCount = 8;
+}

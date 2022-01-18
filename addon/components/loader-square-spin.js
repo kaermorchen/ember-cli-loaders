@@ -1,6 +1,5 @@
 import LoaderBase from './loader-base';
 
-export default LoaderBase.extend({
-  classNames: ['square-spin'],
-  divCount: 1,
-});
+export default class SquareSpin extends LoaderBase {
+  divCount = 1;
+}

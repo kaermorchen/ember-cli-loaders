@@ -1,6 +1,5 @@
 import LoaderBase from './loader-base';
 
-export default LoaderBase.extend({
-  classNames: ['line-scale-party'],
-  divCount: 4,
-});
+export default class LineScaleParty extends LoaderBase {
+  divCount = 4;
+}

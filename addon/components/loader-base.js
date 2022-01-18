@@ -1,26 +1,14 @@
-import Component from '@ember/component';
-import layout from '../templates/components/loader-base';
-import { computed } from '@ember/object';
-import { typeOf } from '@ember/utils';
+import Component from '@glimmer/component';
+import { dasherize } from '@ember/string';
 
-export default Component.extend({
-  layout,
-  classNames: ['loader-base'],
+export default class LoaderBase extends Component {
+  divCount = 0;
 
-  divCount: null,
+  get class() {
+    return dasherize(this.constructor.name);
+  }
 
-  divs: computed('divCount', function () {
-    const divCount = this.divCount;
-    const divs = [];
-
-    if (typeOf(divCount) !== 'number') {
-      return divs;
-    }
-
-    for (let index = 0; index < divCount; index++) {
-      divs.push(index);
-    }
-
-    return divs;
-  }),
-});
+  get divs() {
+    return Array(this.divCount).fill(undefined);
+  }
+}

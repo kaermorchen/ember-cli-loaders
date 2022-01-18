@@ -1,6 +1,5 @@
 import LoaderBase from './loader-base';
 
-export default LoaderBase.extend({
-  classNames: ['pacman'],
-  divCount: 5,
-});
+export default class Pacman extends LoaderBase {
+  divCount = 5;
+}

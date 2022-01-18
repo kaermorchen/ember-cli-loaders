@@ -1,6 +1,5 @@
 import LoaderBase from './loader-base';
 
-export default LoaderBase.extend({
-  classNames: ['ball-scale-ripple'],
-  divCount: 1,
-});
+export default class BallScaleRipple extends LoaderBase {
+  divCount = 1;
+}

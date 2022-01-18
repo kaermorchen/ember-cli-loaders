@@ -1,6 +1,5 @@
 import LoaderBase from './loader-base';
 
-export default LoaderBase.extend({
-  classNames: ['ball-scale-multiple'],
-  divCount: 3,
-});
+export default class BallScaleMultiple extends LoaderBase {
+  divCount = 3;
+}

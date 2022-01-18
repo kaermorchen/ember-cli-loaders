@@ -1,6 +1,5 @@
 import LoaderBase from './loader-base';
 
-export default LoaderBase.extend({
-  classNames: ['triangle-skew-spin'],
-  divCount: 1,
-});
+export default class TriangleSkewSpin extends LoaderBase {
+  divCount = 1;
+}
