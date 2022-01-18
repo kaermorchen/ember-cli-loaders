@@ -1,27 +1,26 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
-import hbs from 'htmlbars-inline-precompile';
+import { hbs } from 'ember-cli-htmlbars';
 
 module('Integration | Component | loader-base', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    await render(hbs`{{loader-base}}`);
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.set('myAction', function(val) { ... });
 
-    assert.dom('.loader-base').exists();
-  });
+    await render(hbs`<LoaderBase />`);
 
-  test('divCount works', async function (assert) {
-    const divCount = 3;
+    assert.dom(this.element).hasText('');
 
-    this.set('divCount', divCount);
+    // Template block usage:
+    await render(hbs`
+      <LoaderBase>
+        template block text
+      </LoaderBase>
+    `);
 
-    await render(hbs`{{loader-base divCount=divCount}}`);
-
-    assert.equal(
-      this.element.querySelector('.loader-base').innerHTML.trim(),
-      '<div></div>'.repeat(divCount)
-    );
+    assert.dom(this.element).hasText('template block text');
   });
 });

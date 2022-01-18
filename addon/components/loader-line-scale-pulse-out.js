@@ -1,6 +1,5 @@
 import LoaderBase from './loader-base';
 
-export default LoaderBase.extend({
-  classNames: ['line-scale-pulse-out'],
-  divCount: 5,
-});
+export default class LineScalePulseOut extends LoaderBase {
+  divCount = 5;
+}
