@@ -2,8 +2,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/ember-cli-loaders"><img src="https://img.shields.io/npm/v/ember-cli-loaders.svg?style=flat-square&colorB=44cc11" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/ember-cli-loaders"><img src="https://img.shields.io/npm/dm/ember-cli-loaders.svg?style=flat-square" alt="npm monthly downloads"></a>  
-  <a href="https://travis-ci.org/kaermorchen/ember-cli-loaders"><img src="https://img.shields.io/travis/kaermorchen/ember-cli-loaders.svg?style=flat-square" alt="Build Status"></a>
+  <a href="https://www.npmjs.com/package/ember-cli-loaders"><img src="https://img.shields.io/npm/dm/ember-cli-loaders.svg?style=flat-square" alt="npm monthly downloads"></a>
   <a href="https://emberobserver.com/addons/ember-cli-loaders"><img src="https://emberobserver.com/badges/ember-cli-loaders.svg" alt="Ember Observer Score"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License: MIT"></a>
 </p>
