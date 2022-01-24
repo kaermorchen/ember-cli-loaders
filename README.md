@@ -40,42 +40,42 @@ Then include the following in your `app.scss` file:
 
 You can use loader's components.
 
-```mustache
-{{loader-ball-pulse}}
-{{loader-ball-grid-pulse}}
-{{loader-ball-clip-rotate}}
-{{loader-ball-clip-rotate-pulse}}
-{{loader-square-spin}}
-{{loader-ball-clip-rotate-multiple}}
-{{loader-ball-pulse-rise}}
-{{loader-ball-rotate}}
-{{loader-cube-transition}}
-{{loader-ball-zig-zag}}
-{{loader-ball-zig-zag-deflect}}
-{{loader-ball-triangle-path}}
-{{loader-ball-scale}}
-{{loader-line-scale}}
-{{loader-line-scale-party}}
-{{loader-ball-scale-multiple}}
-{{loader-ball-pulse-sync}}
-{{loader-ball-beat}}
-{{loader-line-scale-pulse-out}}
-{{loader-line-scale-pulse-out-rapid}}
-{{loader-ball-scale-ripple}}
-{{loader-ball-scale-ripple-multiple}}
-{{loader-line-spin-fade-loader}}
-{{loader-triangle-skew-spin}}
-{{loader-pacman}}
-{{loader-semi-circle-spin}}
-{{loader-ball-grid-beat}}
-{{loader-ball-scale-random}}
+```hbs
+<LoaderBallPulse />
+<LoaderBallGridPulse />
+<LoaderBallClipRotate />
+<LoaderBallClipRotatePulse />
+<LoaderSquareSpin />
+<LoaderBallClipRotateMultiple />
+<LoaderBallPulseRise />
+<LoaderBallRotate />
+<LoaderCubeTransition />
+<LoaderBallZigZag />
+<LoaderBallZigZagDeflect />
+<LoaderBallTrianglePath />
+<LoaderBallScale />
+<LoaderLineScale />
+<LoaderLineScaleParty />
+<LoaderBallScaleMultiple />
+<LoaderBallPulseSync />
+<LoaderBallBeat />
+<LoaderLineScalePulseOut />
+<LoaderLineScalePulseOutRapid />
+<LoaderBallScaleRipple />
+<LoaderBallScaleRippleMultiple />
+<LoaderLineSpinFadeLoader />
+<LoaderTriangleSkewSpin />
+<LoaderPacman />
+<LoaderSemiCircleSpin />
+<LoaderBallGridBeat />
+<LoaderBallScaleRandom />
 ```
 
 ## Configuration
 
 ### Custom Loaders.css components
 
-For import not all loaders instead `@import "ember-cli-loaders/loaders";` you can use code below:
+For import not all loaders instead of `@import "ember-cli-loaders/loaders";` use code below:
 
 ```scss
 @import 'ember-cli-loaders/variables';
