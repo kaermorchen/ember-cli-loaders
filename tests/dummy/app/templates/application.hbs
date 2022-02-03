@@ -16,7 +16,7 @@
   <div class="loaders">
     {{#each @model as |name|}}
       <div class="loader">
-        {{component name}}
+        {{component (ensure-safe-component name)}}
         <div class="loader-name">
           {{concat "<" (classify name) " />"}}
         </div>
