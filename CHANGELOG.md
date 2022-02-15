@@ -1,6 +1,15 @@
 # Changelog
 
 
+
+## v0.8.1 (2022-02-15)
+
+#### :bug: Bug Fix
+* [#33](https://github.com/kaermorchen/ember-cli-loaders/pull/33) Refactore class property ([@kaermorchen](https://github.com/kaermorchen))
+
+#### Committers: 1
+- Stanislav Romanov ([@kaermorchen](https://github.com/kaermorchen))
+
 ## v0.8.0 (2022-02-15)
 
 #### :boom: Breaking Change
