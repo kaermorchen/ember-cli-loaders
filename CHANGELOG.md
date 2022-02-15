@@ -1,5 +1,34 @@
 # Changelog
 
+
+## v0.8.0 (2022-02-15)
+
+#### :boom: Breaking Change
+* [#19](https://github.com/kaermorchen/ember-cli-loaders/pull/19) Remove loader-base from the app import ([@kaermorchen](https://github.com/kaermorchen))
+* [#16](https://github.com/kaermorchen/ember-cli-loaders/pull/16) Remove class loader-base ([@kaermorchen](https://github.com/kaermorchen))
+* [#15](https://github.com/kaermorchen/ember-cli-loaders/pull/15) Refactor components to JS classes ([@kaermorchen](https://github.com/kaermorchen))
+
+#### :rocket: Enhancement
+* [#13](https://github.com/kaermorchen/ember-cli-loaders/pull/13) Add Release It! ([@kaermorchen](https://github.com/kaermorchen))
+
+#### :bug: Bug Fix
+* [#28](https://github.com/kaermorchen/ember-cli-loaders/pull/28) Fix unsave component name ([@kaermorchen](https://github.com/kaermorchen))
+* [#27](https://github.com/kaermorchen/ember-cli-loaders/pull/27) Fix empty vendor css ([@kaermorchen](https://github.com/kaermorchen))
+
+#### :memo: Documentation
+* [#20](https://github.com/kaermorchen/ember-cli-loaders/pull/20) Update documentation ([@kaermorchen](https://github.com/kaermorchen))
+* [#14](https://github.com/kaermorchen/ember-cli-loaders/pull/14) Update demo page ([@kaermorchen](https://github.com/kaermorchen))
+
+#### :house: Internal
+* [#22](https://github.com/kaermorchen/ember-cli-loaders/pull/22) Bump ember-auto-import ([@kaermorchen](https://github.com/kaermorchen))
+* [#18](https://github.com/kaermorchen/ember-cli-loaders/pull/18) Add more tests ([@kaermorchen](https://github.com/kaermorchen))
+* [#15](https://github.com/kaermorchen/ember-cli-loaders/pull/15) Refactor components to JS classes ([@kaermorchen](https://github.com/kaermorchen))
+* [#14](https://github.com/kaermorchen/ember-cli-loaders/pull/14) Update demo page ([@kaermorchen](https://github.com/kaermorchen))
+* [#13](https://github.com/kaermorchen/ember-cli-loaders/pull/13) Add Release It! ([@kaermorchen](https://github.com/kaermorchen))
+
+#### Committers: 1
+- Stanislav Romanov ([@kaermorchen](https://github.com/kaermorchen))
+
 ## [Unreleased](https://github.com/kaermorchen/ember-cli-loaders/tree/HEAD)
 
 [Full Changelog](https://github.com/kaermorchen/ember-cli-loaders/compare/v0.7.0...HEAD)
