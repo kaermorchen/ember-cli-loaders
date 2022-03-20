@@ -21,7 +21,7 @@ module('Integration | Component | loader-base', function (hooks) {
   test('Component html divs equal the component divCount value', async function (assert) {
     await render(hbs`<LoaderBase />`);
 
-    assert.equal(this.element.firstChild.children.length, 0);
+    assert.strictEqual(this.element.firstChild.children.length, 0);
   });
 
   test('all children elemetns are `div`', async function (assert) {
