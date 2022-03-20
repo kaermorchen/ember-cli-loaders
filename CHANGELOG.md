@@ -2,6 +2,15 @@
 
 
 
+
+## v0.8.3 (2022-03-20)
+
+#### :rocket: Enhancement
+* [#34](https://github.com/kaermorchen/ember-cli-loaders/pull/34) Update Ember to 4.2 ([@kaermorchen](https://github.com/kaermorchen))
+
+#### Committers: 1
+- Stanislav Romanov ([@kaermorchen](https://github.com/kaermorchen))
+
 ## v0.8.1 (2022-02-15)
 
 #### :bug: Bug Fix
